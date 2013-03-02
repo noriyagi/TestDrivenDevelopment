@@ -5,12 +5,11 @@ public class Dollar {
 	public int amount = 10;
 
 	public Dollar(int i) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒRƒ“ƒXƒgƒ‰ƒNƒ^[EƒXƒ^ƒu
+		// TODO ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰å¯¾å¿œ
 	}
 
 	public void times(int multiplier) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
-		
+		// TODO ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰å¯¾å¿œ		
 	}
 
 }
