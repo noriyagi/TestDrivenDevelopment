@@ -11,7 +11,7 @@ abstract class Money {
 	}
 	// Dollarを返却するMoneyのファクトリメソッド
 	static Dollar dollar(int amount) {
-		return new Dollar(amount);
+		return new Dollar(amount, "USD");
 	}
 	static Franc franc(int amount) {
 		return new Franc(amount, "CHF");
