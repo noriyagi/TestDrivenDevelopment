@@ -3,6 +3,7 @@ package tdd.koya;
 abstract class Money {
 
 	protected int amount;
+	protected String currency;
 	
 	public boolean equals(Object object){
 		Money money = (Money) object;
@@ -15,10 +16,12 @@ abstract class Money {
 	static Franc franc(int amount) {
 		return new Franc(amount);
 	}
-	
+
 	// times()メソッドを共通化したかったが後回し
 	abstract Money times(int multiplier);
 	
 	// 通貨種別を返却する
-	abstract String currency();
+	public String currency(){
+		return currency;
+	}
 }
