@@ -1,6 +1,6 @@
 package tdd.koya;
 
-public class Dollar {
+public class Dollar extends Money{
 
 	private int amount;
 
@@ -14,7 +14,7 @@ public class Dollar {
 	
 	public boolean equals(Object object){
 		Dollar dollar = (Dollar) object;
-		return amount == dollar.amount;
+		return this.amount == dollar.amount;
 	}
 
 }
