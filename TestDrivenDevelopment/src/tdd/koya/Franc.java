@@ -1,8 +1,6 @@
 package tdd.koya;
 
 public class Franc extends Money {
-
-	private int amount;
 	
 	public Franc(int amount) {
 		this.amount = amount;
