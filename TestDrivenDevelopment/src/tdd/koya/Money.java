@@ -12,6 +12,10 @@ abstract class Money {
 	static Dollar dollar(int amount) {
 		return new Dollar(amount);
 	}
-	// 
+	static Franc franc(int amount) {
+		return new Franc(amount);
+	}
+	
+	// times()メソッドを共通化したかったが後回し
 	abstract Money times(int multiplier);
 }
