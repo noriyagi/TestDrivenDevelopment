@@ -14,7 +14,7 @@ abstract class Money {
 		return new Dollar(amount);
 	}
 	static Franc franc(int amount) {
-		return new Franc(amount, null);
+		return new Franc(amount, "CHF");
 	}
 
 	// times()メソッドを共通化したかったが後回し

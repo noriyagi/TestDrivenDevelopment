@@ -7,7 +7,7 @@ public class Franc extends Money {
 	public Franc(int amount, String currency) {
 		this.amount = amount;
 		// インターフェースを変えずに変えずに貨幣種別を設定する。
-		this.currency = "CHF";
+		this.currency = currency;
 	}
 	
 	public Money times(int multiplier) {
