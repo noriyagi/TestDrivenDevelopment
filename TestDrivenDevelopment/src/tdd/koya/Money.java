@@ -9,7 +9,7 @@ abstract class Money {
 		return this.amount == money.amount && getClass().equals(money.getClass());
 	}
 	// Dollarを返却するMoneyのファクトリメソッド
-	static Money dollar(int amount) {
+	static Dollar dollar(int amount) {
 		return new Dollar(amount);
 	}
 	// 
