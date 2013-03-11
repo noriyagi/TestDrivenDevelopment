@@ -22,6 +22,7 @@ abstract class Money {
 	}	
 	// times()メソッドを共通化したかったが後回し
 	abstract Money times(int multiplier);
+	
 	// 通貨種別を返却する
 	public String currency(){
 		return currency;
