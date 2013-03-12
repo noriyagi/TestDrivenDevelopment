@@ -1,6 +1,6 @@
 package tdd.koya;
 
-abstract class Money {
+class Money {
 
 	protected int amount;
 	protected String currency;
@@ -21,10 +21,17 @@ abstract class Money {
 	return this.amount == money.amount && getClass().equals(money.getClass());
 	}	
 	// times()メソッドを共通化したかったが後回し
-	abstract Money times(int multiplier);
+	Money times(int multiplier) {
+		return null;
+	}
 	
 	// 通貨種別を返却する
 	public String currency(){
 		return currency;
+	}
+	
+	// デバッグ用
+	public String toString() {
+		return amount + " " + currency;
 	}
 }
