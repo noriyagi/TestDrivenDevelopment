@@ -32,6 +32,6 @@ class Money {
 	
 	// デバッグ用
 	public String toString() {
-		return amount + " " + currency;
+		return this.amount + " " + this.currency;
 	}
 }
