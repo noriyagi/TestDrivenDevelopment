@@ -22,7 +22,7 @@ class Money {
 	}	
 	// times()メソッドを共通化したかったが後回し
 	Money times(int multiplier) {
-		return null;
+		return new Money(amount * multiplier, currency);
 	}
 	
 	// 通貨種別を返却する
