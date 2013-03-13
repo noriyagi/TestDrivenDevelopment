@@ -18,7 +18,7 @@ class Money {
 	}
 	public boolean equals(Object object){
 	Money money = (Money) object;
-	return this.amount == money.amount && getClass().equals(money.getClass());
+	return this.amount == money.amount && currency().equals(money.currency());
 	}	
 	// times()メソッドを共通化したかったが後回し
 	Money times(int multiplier) {
