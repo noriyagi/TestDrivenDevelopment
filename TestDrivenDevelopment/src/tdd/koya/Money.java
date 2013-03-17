@@ -1,6 +1,6 @@
 package tdd.koya;
 
-class Money {
+class Money implements Expression {
 
 	protected int amount;
 	protected String currency;
@@ -31,7 +31,7 @@ class Money {
 	}
 	
 	// 加法
-	public Money plus(Money addend) {
+	public Expression plus(Money addend) {
 		return new Money(amount + addend.amount, currency);
 	}
 	// デバッグ用
