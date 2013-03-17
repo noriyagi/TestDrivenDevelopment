@@ -30,6 +30,10 @@ class Money {
 		return currency;
 	}
 	
+	// 加法
+	public Money plus(Money addend) {
+		return new Money(amount + addend.amount, currency);
+	}
 	// デバッグ用
 	public String toString() {
 		return this.amount + " " + this.currency;
