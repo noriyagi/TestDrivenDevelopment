@@ -39,7 +39,7 @@ class Money implements Expression {
 	
 	public Money reduce(Bank bank, String to) {
 		// CHFからUSDに変換なら…のべたべたの仮実装
-		int rate = (currency.equals("CHF") && to.equals("USD")) ? 2 : 1;
+		int rate = bank.rate(currency, to);
 		return new Money(amount/rate, to);
 	}
 	
