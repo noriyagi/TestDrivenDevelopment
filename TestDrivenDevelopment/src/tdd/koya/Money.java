@@ -23,7 +23,7 @@ class Money implements Expression {
 	}
 	
 	// times()メソッドを共通化したかったが後回し
-	Expression times(int multiplier) {
+	public Expression times(int multiplier) {
 		return new Money(amount * multiplier, currency);
 	}
 	
