@@ -16,10 +16,12 @@ class Money implements Expression {
 	static Money franc(int amount) {
 		return new Money(amount, "CHF");
 	}
+	
 	public boolean equals(Object object){
 	Money money = (Money) object;
 	return this.amount == money.amount && currency().equals(money.currency());
-	}	
+	}
+	
 	// times()メソッドを共通化したかったが後回し
 	Money times(int multiplier) {
 		return new Money(amount * multiplier, currency);
@@ -34,6 +36,11 @@ class Money implements Expression {
 	public Expression plus(Money addend) {
 		return new Sum(this, addend);
 	}
+	
+	public Money reduce(String to) {
+		return this;
+	}
+	
 	// デバッグ用
 	public String toString() {
 		return this.amount + " " + this.currency;
