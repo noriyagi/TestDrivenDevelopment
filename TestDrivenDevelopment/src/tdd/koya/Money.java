@@ -23,7 +23,7 @@ class Money implements Expression {
 	}
 	
 	// times()メソッドを共通化したかったが後回し
-	Money times(int multiplier) {
+	Expression times(int multiplier) {
 		return new Money(amount * multiplier, currency);
 	}
 	
@@ -33,7 +33,7 @@ class Money implements Expression {
 	}
 	
 	// 加法
-	public Expression plus(Money addend) {
+	public Expression plus(Expression addend) {
 		return new Sum(this, addend);
 	}
 	
